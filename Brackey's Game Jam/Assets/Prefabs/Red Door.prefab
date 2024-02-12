@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2565027986534046951}
   - component: {fileID: 3644774577886013703}
+  - component: {fileID: 8044732550044063445}
   m_Layer: 0
   m_Name: Red Door
   m_TagString: Untagged
@@ -84,3 +85,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8044732550044063445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315213589830586885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794dc032fd90faf478da0ca3fb431413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedDudePrefab: {fileID: 5894387504804568459, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
+  DudeCount: 5
