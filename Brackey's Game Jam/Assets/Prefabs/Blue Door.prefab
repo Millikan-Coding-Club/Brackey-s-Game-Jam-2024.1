@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2571086042935371718}
   - component: {fileID: 8824546953785107972}
   - component: {fileID: 6621450343144278401}
+  - component: {fileID: -2389415011992920402}
   m_Layer: 0
   m_Name: Blue Door
   m_TagString: Untagged
@@ -98,4 +99,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BlueDudePrefab: {fileID: 7207631219572703063, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+  OpenDoorSprite: {fileID: 2062337784, guid: 3ed820b7ccb789d4cbe21a918b859fbe, type: 3}
   DudeCount: 5
+--- !u!61 &-2389415011992920402
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8694436719576861474}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.92, y: 2.42}
+    newSize: {x: 1.92, y: 2.42}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.92, y: 2.42}
+  m_EdgeRadius: 0

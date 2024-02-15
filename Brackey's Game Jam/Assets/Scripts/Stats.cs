@@ -9,21 +9,16 @@ public class Stats : MonoBehaviour
     public int defense = 0;
     public int attack = 0;
     public int hitSpeed = 0;
-    // Start is called before the first frame update
-
 
     public TextMeshProUGUI healthCount;
     public TextMeshProUGUI defenseCount;
     public TextMeshProUGUI attackCount;
     public TextMeshProUGUI hitSpeedCount;
 
-    void Start() { }
-
     // Update is called once per frame
     void Update() { }
     public void AddHealth()
     {
-        Debug.Log("hi");
         hp++;
         healthCount.text = hp.ToString();
     }

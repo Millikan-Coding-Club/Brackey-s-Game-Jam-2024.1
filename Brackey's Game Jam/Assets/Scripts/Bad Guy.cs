@@ -18,21 +18,24 @@ public class BadGuy : MonoBehaviour
     void Update()
     {
         Allies = GameObject.FindGameObjectsWithTag("ally");
-        GameObject NearestAlly = Allies[0];
-        float distanceToNearest = Vector3.Distance(transform.position, NearestAlly.transform.position);
+        if (Allies.Length != 0)
+        {
+            GameObject NearestAlly = Allies[0];
+            float distanceToNearest = Vector3.Distance(transform.position, NearestAlly.transform.position);
 
-        foreach (GameObject e in Allies)
-        {
-            float distanceToCurrent = Vector3.Distance(transform.position, e.transform.position);
-            if (distanceToCurrent < distanceToNearest)
+            foreach (GameObject e in Allies)
             {
-                NearestAlly = e;
-                distanceToNearest = distanceToCurrent;
+                float distanceToCurrent = Vector3.Distance(transform.position, e.transform.position);
+                if (distanceToCurrent < distanceToNearest)
+                {
+                    NearestAlly = e;
+                    distanceToNearest = distanceToCurrent;
+                }
             }
-        }
-        if (distanceToNearest > SocialDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, NearestAlly.transform.position, DudeSpeed * Time.deltaTime);
+            if (distanceToNearest > SocialDistance)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, NearestAlly.transform.position, DudeSpeed * Time.deltaTime);
+            }
         }
     }
 }
