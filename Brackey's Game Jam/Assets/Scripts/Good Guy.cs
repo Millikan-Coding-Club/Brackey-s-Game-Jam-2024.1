@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GoodGuy : MonoBehaviour
@@ -8,6 +9,10 @@ public class GoodGuy : MonoBehaviour
     public GameObject Pivot;
     [SerializeField] private float DudeSpeed;
     [SerializeField] private float SocialDistance;
+    [SerializeField] private Animator animator;
+    [SerializeField] private float damage;
+    [SerializeField] private float attackSpeed;
+    float timeUntilAttack;
 
     // Start is called before the first frame update
     private void Awake()
@@ -35,20 +40,27 @@ public class GoodGuy : MonoBehaviour
                 }
             }
             // Make the good guy chase the closest enemy but not closer than SocialDistance
-            Pivot.transform.rotation = Quaternion.Euler(0, 0, -90 + Mathf.Rad2Deg * Mathf.Atan2(NearestEnemy.transform.position.y - Pivot.transform.position.y, NearestEnemy.transform.position.x - Pivot.transform.position.x));
+            // TODO: Fix rotation
+            transform.rotation = Quaternion.Euler(0, 0, -120f + Mathf.Rad2Deg * Mathf.Atan2(NearestEnemy.transform.position.y - transform.position.y, NearestEnemy.transform.position.x - transform.position.x));
             if (distanceToNearest > SocialDistance)
             {
                 transform.position = Vector2.MoveTowards(transform.position, NearestEnemy.transform.position, DudeSpeed * Time.deltaTime);
-                //transform.position = Vector2.up * DudeSpeed * Time.deltaTime;
+            } else if (timeUntilAttack <= 0f) 
+            {
+                animator.SetTrigger("Attack");
+                timeUntilAttack = attackSpeed;
             } else
             {
-                AttackNearestEnemy();
+                timeUntilAttack -= Time.deltaTime;
             }
         }
     }
 
-    private void AttackNearestEnemy()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.tag == "enemy")
+        {
+            Debug.Log("Enemy hit");
+        }
     }
 }
