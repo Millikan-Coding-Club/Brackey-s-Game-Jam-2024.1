@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class GoodGuy : MonoBehaviour
 {
@@ -14,11 +15,6 @@ public class GoodGuy : MonoBehaviour
     [SerializeField] private float attackSpeed;
     float timeUntilAttack;
 
-    // Start is called before the first frame update
-    private void Awake()
-    {
-        transform.rotation = Quaternion.identity;
-    }
 
     // Update is called once per frame
     void Update()
@@ -40,7 +36,6 @@ public class GoodGuy : MonoBehaviour
                 }
             }
             // Make the good guy chase the closest enemy but not closer than SocialDistance
-            // TODO: Fix rotation
             transform.rotation = Quaternion.Euler(0, 0, -120f + Mathf.Rad2Deg * Mathf.Atan2(NearestEnemy.transform.position.y - transform.position.y, NearestEnemy.transform.position.x - transform.position.x));
             if (distanceToNearest > SocialDistance)
             {

@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &125026435
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.559
+      objectReference: {fileID: 0}
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.614
+      objectReference: {fileID: 0}
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 775104118463027310, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207631219572703063, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
+      propertyPath: m_Name
+      value: Good little dude
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1da0f8035f93cfb479202dfa65527177, type: 3}
 --- !u!1 &168915341
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,120 +3945,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.92, y: 2.42}
   m_EdgeRadius: 0
---- !u!1001 &1531980735
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.53505
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.7673941
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894387504804568459, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_Name
-      value: Bad little dude (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
---- !u!1001 &1614972124
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.1422958
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.4457877
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894387504804568459, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_Name
-      value: Bad little dude (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
 --- !u!1 &1650237234
 GameObject:
   m_ObjectHideFlags: 0
@@ -4532,63 +4475,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1864901968
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.4276733
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.2675251
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415887413686655067, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894387504804568459, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
-      propertyPath: m_Name
-      value: Bad little dude (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
 --- !u!1 &1964822291
 GameObject:
   m_ObjectHideFlags: 0
@@ -5070,6 +4956,4 @@ SceneRoots:
   - {fileID: 1441540563}
   - {fileID: 168915345}
   - {fileID: 894681804}
-  - {fileID: 1531980735}
-  - {fileID: 1614972124}
-  - {fileID: 1864901968}
+  - {fileID: 125026435}
