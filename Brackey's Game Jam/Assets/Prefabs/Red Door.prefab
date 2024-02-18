@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8044732550044063445}
   m_Layer: 0
   m_Name: Red Door
-  m_TagString: Untagged
+  m_TagString: Red Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,4 +98,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RedDudePrefab: {fileID: 5894387504804568459, guid: ad48a3a110941424a9726f299c7b0b39, type: 3}
+  OpenDoorSprite: {fileID: 2062337784, guid: 3ed820b7ccb789d4cbe21a918b859fbe, type: 3}
   DudeCount: 5

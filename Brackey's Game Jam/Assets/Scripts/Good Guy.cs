@@ -11,8 +11,10 @@ public class GoodGuy : MonoBehaviour
     [SerializeField] private float DudeSpeed;
     [SerializeField] private float SocialDistance;
     [SerializeField] private Animator animator;
-    [SerializeField] private float damage;
-    [SerializeField] private float attackSpeed;
+    public float damage;
+    public float attackSpeed;
+    public float health;
+    public float defense;
     float timeUntilAttack;
 
 
@@ -55,7 +57,17 @@ public class GoodGuy : MonoBehaviour
     {
         if (collision.tag == "enemy")
         {
-            Debug.Log("Enemy hit");
+            collision.GetComponent<BadGuy>().Damage(damage);
+        }
+    }
+
+    public void Damage(float EnemyDamage)
+    {
+        health -= EnemyDamage - defense;
+
+        if (health <= 0f)
+        {
+            Destroy(gameObject);
         }
     }
 }

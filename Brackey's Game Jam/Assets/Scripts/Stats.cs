@@ -5,7 +5,7 @@ using TMPro;
 
 public class Stats : MonoBehaviour
 {
-    public int hp = 0;
+    public int health = 0;
     public int defense = 0;
     public int attack = 0;
     public int hitSpeed = 0;
@@ -14,27 +14,42 @@ public class Stats : MonoBehaviour
     public TextMeshProUGUI defenseCount;
     public TextMeshProUGUI attackCount;
     public TextMeshProUGUI hitSpeedCount;
+    [SerializeField] private GameController GameController;
 
-    // Update is called once per frame
-    void Update() { }
     public void AddHealth()
     {
-        hp++;
-        healthCount.text = hp.ToString();
+        if (GameController.points > 0)
+        {
+            health++;
+            GameController.points--;
+            healthCount.text = health.ToString();
+        }
     }
     public void AddDefense()
     {
-        defense++;
-        defenseCount.text = defense.ToString();
+        if (GameController.points > 0)
+        {
+            defense++;
+            GameController.points--;
+            defenseCount.text = defense.ToString();
+        }
     }
     public void AddAttack()
     {
-        attack++;
-        attackCount.text = attack.ToString();
+        if (GameController.points > 0)
+        {
+            attack++;
+            GameController.points--;
+            attackCount.text = attack.ToString();
+        }
     }
     public void AddHitSpeed()
     {
-        hitSpeed++;
-        hitSpeedCount.text = hitSpeed.ToString();
+        if (GameController.points > 0)
+        {
+            hitSpeed++;
+            GameController.points--;
+            hitSpeedCount.text = hitSpeed.ToString();
+        }
     }
 }

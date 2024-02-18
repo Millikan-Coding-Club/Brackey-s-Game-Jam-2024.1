@@ -286,6 +286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2961370688399695863}
+  - component: {fileID: 2633874269669324558}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -309,6 +310,27 @@ Transform:
   - {fileID: 940108101353568577}
   m_Father: {fileID: 775104118463027310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2633874269669324558
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6842003607416387392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ebed2bbfbe80d943811570f5fc16d33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7207631219572703063
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,10 +384,11 @@ MonoBehaviour:
   Enemies: []
   Pivot: {fileID: 6842003607416387392}
   DudeSpeed: 1
-  SocialDistance: 1
-  animator: {fileID: 1677826728457821595}
+  SocialDistance: 0.75
+  animator: {fileID: 2633874269669324558}
   damage: 50
   attackSpeed: 1
+  health: 100
 --- !u!58 &-3653803254249597986
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -436,7 +459,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7207631219572703063}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 6ebed2bbfbe80d943811570f5fc16d33, type: 2}
   m_CullingMode: 0
@@ -523,7 +546,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.62915266, b: 0.8862745, a: 1}
+  m_Color: {r: 0.3019608, g: 0.427451, b: 0.95294124, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

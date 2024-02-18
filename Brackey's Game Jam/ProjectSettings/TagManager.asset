@@ -6,6 +6,9 @@ TagManager:
   tags:
   - enemy
   - ally
+  - Unclaimed Door
+  - Red Door
+  - Blue Door
   layers:
   - Default
   - TransparentFX
